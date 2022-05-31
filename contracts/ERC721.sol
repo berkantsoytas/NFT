@@ -61,33 +61,31 @@ contract ERC721 {
 		return owner;
 	}
 
-		/// @notice Transfer ownership of an NFT
-		/// @dev Throws unless `msg.sender` is the current owner, an authorized
-		///  operator, or the approved address for this NFT. Throws if `_from` is
-		///  not the current owner. Throws if `_to` is the zero address. Throws if
-		///  `_tokenId` is not a valid NFT.
-		/// @param _from The current owner of the NFT
-		/// @param _to The new owner
-		/// @param _tokenId The NFT to transfer
-		function _transferFrom(address _from, address _to, uint256 _tokenId) internal {
-			// require that the address receiving a token is not a zero address
-			require(_to != address(0), 'ERC721: transfer to address is invalid');
-			// require that the tokenId is _from's token
-			require(ownerOf(_tokenId) == _from, 'ERC721: sender is not the owner of the given token ID');
-			// 
-
-			// add the token id to the address receiving the token
-			_tokenOwner[_tokenId] = _to;
-			// update the balance of the address from token
-			_OwnedTokensCount[_from]--;
-			// update the balance of the address to token
-			_OwnedTokensCount[_to]++;
-			// add the safe functionality
-			_tokenApporvals[_tokenId] = address(0);
-
-			// emit the transfer event
-			emit Transfer(_from, _to, _tokenId);
-		}
+	/// @notice Transfer ownership of an NFT
+	/// @dev Throws unless `msg.sender` is the current owner, an authorized
+	///  operator, or the approved address for this NFT. Throws if `_from` is
+	///  not the current owner. Throws if `_to` is the zero address. Throws if
+	///  `_tokenId` is not a valid NFT.
+	/// @param _from The current owner of the NFT
+	/// @param _to The new owner
+	/// @param _tokenId The NFT to transfer
+	function _transferFrom(address _from, address _to, uint256 _tokenId) internal {
+		// require that the address receiving a token is not a zero address
+		require(_to != address(0), 'ERC721: transfer to address is invalid');
+		// require that the tokenId is _from's token
+		require(ownerOf(_tokenId) == _from, 'ERC721: sender is not the owner of the given token ID');
+		// 
+		// add the token id to the address receiving the token
+		_tokenOwner[_tokenId] = _to;
+		// update the balance of the address from token
+		_OwnedTokensCount[_from]--;
+		// update the balance of the address to token
+		_OwnedTokensCount[_to]++;
+		// add the safe functionality
+		_tokenApporvals[_tokenId] = address(0);
+		// emit the transfer event
+		emit Transfer(_from, _to, _tokenId);
+	}
 
 		function transferFrom(address _from, address _to, uint256 _tokenId) public {
 			// call the transfer function
