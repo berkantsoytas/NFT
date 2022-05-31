@@ -42,7 +42,6 @@ contract ERC721 {
   function balanceOf(address _owner) public view returns (uint256) {
     // If the owner is the zero address, then throw
     require(_owner != address(0), 'ERC721: balanceOf owner is invalid');
-    
     return _OwnedTokensCount[_owner];
   }
 

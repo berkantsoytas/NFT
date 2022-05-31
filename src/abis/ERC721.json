@@ -65,9 +65,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721.sol\":\"ERC721\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC721.sol\":{\"keccak256\":\"0xa0386550340dfa35981e5faf5b3e8ce7b3186b5fa3c186ae56c99be181ee7ccf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5b4a9facc912ac613cde9120034cb7e45c414e981c5a315282f64b824a8b1f80\",\"dweb:/ipfs/QmcCyRXfsc74sRQ79FziBuH2Z6cVYd52k3vJNGJztDWHRG\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061020d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80636352211e1461003b57806370a082311461006b575b600080fd5b61004e61004936600461018e565b61008c565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e6100793660046101a7565b61010f565b604051908152602001610062565b6000818152602081905260408120546001600160a01b0316806101095760405162461bcd60e51b815260206004820152602a60248201527f4552433732313a206f776e657220717565727920666f72206e6f6e2d657869736044820152693a32b73a103a37b5b2b760b11b60648201526084015b60405180910390fd5b92915050565b60006001600160a01b0382166101725760405162461bcd60e51b815260206004820152602260248201527f4552433732313a2062616c616e63654f66206f776e657220697320696e76616c6044820152611a5960f21b6064820152608401610100565b506001600160a01b031660009081526001602052604090205490565b6000602082840312156101a057600080fd5b5035919050565b6000602082840312156101b957600080fd5b81356001600160a01b03811681146101d057600080fd5b939250505056fea26469706673582212202b3e465a0e2ef30ce275e85ce546358af580ca2d920ccc8eac69b80b6c6345f364736f6c634300080e0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80636352211e1461003b57806370a082311461006b575b600080fd5b61004e61004936600461018e565b61008c565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e6100793660046101a7565b61010f565b604051908152602001610062565b6000818152602081905260408120546001600160a01b0316806101095760405162461bcd60e51b815260206004820152602a60248201527f4552433732313a206f776e657220717565727920666f72206e6f6e2d657869736044820152693a32b73a103a37b5b2b760b11b60648201526084015b60405180910390fd5b92915050565b60006001600160a01b0382166101725760405162461bcd60e51b815260206004820152602260248201527f4552433732313a2062616c616e63654f66206f776e657220697320696e76616c6044820152611a5960f21b6064820152608401610100565b506001600160a01b031660009081526001602052604090205490565b6000602082840312156101a057600080fd5b5035919050565b6000602082840312156101b957600080fd5b81356001600160a01b03811681146101d057600080fd5b939250505056fea26469706673582212202b3e465a0e2ef30ce275e85ce546358af580ca2d920ccc8eac69b80b6c6345f364736f6c634300080e0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721.sol\":\"ERC721\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC721.sol\":{\"keccak256\":\"0x6d5d7b0fe08236312ceea1f32dbf60bf955973cde2a641e4022c8a05841465d9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://71c754646dbe0585ea9c711593c58075cfa92a7f195eaf667bf5f82cac5bf750\",\"dweb:/ipfs/QmW1ALpHs7EVW4nP78iRripcrW4VL6VH7Kg2BPLbmUQ2Ms\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061020d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80636352211e1461003b57806370a082311461006b575b600080fd5b61004e61004936600461018e565b61008c565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e6100793660046101a7565b61010f565b604051908152602001610062565b6000818152602081905260408120546001600160a01b0316806101095760405162461bcd60e51b815260206004820152602a60248201527f4552433732313a206f776e657220717565727920666f72206e6f6e2d657869736044820152693a32b73a103a37b5b2b760b11b60648201526084015b60405180910390fd5b92915050565b60006001600160a01b0382166101725760405162461bcd60e51b815260206004820152602260248201527f4552433732313a2062616c616e63654f66206f776e657220697320696e76616c6044820152611a5960f21b6064820152608401610100565b506001600160a01b031660009081526001602052604090205490565b6000602082840312156101a057600080fd5b5035919050565b6000602082840312156101b957600080fd5b81356001600160a01b03811681146101d057600080fd5b939250505056fea264697066735822122014fea42bc48486037a62afa47a2bcd0b4dce5e989f14753c8282c6e54e43942b64736f6c634300080e0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80636352211e1461003b57806370a082311461006b575b600080fd5b61004e61004936600461018e565b61008c565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e6100793660046101a7565b61010f565b604051908152602001610062565b6000818152602081905260408120546001600160a01b0316806101095760405162461bcd60e51b815260206004820152602a60248201527f4552433732313a206f776e657220717565727920666f72206e6f6e2d657869736044820152693a32b73a103a37b5b2b760b11b60648201526084015b60405180910390fd5b92915050565b60006001600160a01b0382166101725760405162461bcd60e51b815260206004820152602260248201527f4552433732313a2062616c616e63654f66206f776e657220697320696e76616c6044820152611a5960f21b6064820152608401610100565b506001600160a01b031660009081526001602052604090205490565b6000602082840312156101a057600080fd5b5035919050565b6000602082840312156101b957600080fd5b81356001600160a01b03811681146101d057600080fd5b939250505056fea264697066735822122014fea42bc48486037a62afa47a2bcd0b4dce5e989f14753c8282c6e54e43942b64736f6c634300080e0033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -1195,9 +1195,9 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "60:2404:0:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "60:2404:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2185:276;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;363:32:6;;;345:51;;333:2;318:18;2185:276:0;;;;;;;;1689:243;;;;;;:::i;:::-;;:::i;:::-;;;844:25:6;;;832:2;817:18;1689:243:0;698:177:6;2185:276:0;2240:7;2272:21;;;;;;;;;;;-1:-1:-1;;;;;2272:21:0;;2362:74;;;;-1:-1:-1;;;2362:74:0;;1082:2:6;2362:74:0;;;1064:21:6;1121:2;1101:18;;;1094:30;1160:34;1140:18;;;1133:62;-1:-1:-1;;;1211:18:6;;;1204:40;1261:19;;2362:74:0;;;;;;;;;2450:5;2185:276;-1:-1:-1;;2185:276:0:o;1689:243::-;1745:7;-1:-1:-1;;;;;1822:20:0;;1814:67;;;;-1:-1:-1;;;1814:67:0;;1493:2:6;1814:67:0;;;1475:21:6;1532:2;1512:18;;;1505:30;1571:34;1551:18;;;1544:62;-1:-1:-1;;;1622:18:6;;;1615:32;1664:19;;1814:67:0;1291:398:6;1814:67:0;-1:-1:-1;;;;;;1901:25:0;;;;;:17;:25;;;;;;;1689:243::o;14:180:6:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:6;;14:180;-1:-1:-1;14:180:6:o;407:286::-;466:6;519:2;507:9;498:7;494:23;490:32;487:52;;;535:1;532;525:12;487:52;561:23;;-1:-1:-1;;;;;613:31:6;;603:42;;593:70;;659:1;656;649:12;593:70;682:5;407:286;-1:-1:-1;;;407:286:6:o",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract ERC721 {\r\n\r\n  event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\r\n  \r\n  // mapping in solidity creates a hash table of key pair values\r\n  // Mapping from token id to the token owner\r\n  mapping(uint256 => address) private _tokenOwner;\r\n\r\n  // Mapping from owner to number of owned tokens\r\n  mapping(address => uint) private _OwnedTokensCount;\r\n\r\n  function _exists(uint256 tokenId) internal view returns (bool) {\r\n    // settings the address of nft owner to check the mapping\r\n    // of the address from token owner at the tokenId\r\n    address owner = _tokenOwner[tokenId];\r\n    // If the owner is not 0, then the token exists\r\n    return owner != address(0); \r\n  }\r\n\r\n  function _mint(address to, uint256 tokenId) internal virtual {\r\n    // requires that the address isn't zero\r\n    require(to != address(0), 'ERC721: mint to address is invalid');\r\n    // requires that token token does not already exist\r\n    require(!_exists(tokenId), 'ERC721: token already exists');\r\n    // we are adding a new address with a token id for minting\r\n    _tokenOwner[tokenId] = to;\r\n    // keeping track of each address that is minting and adding one to the account\r\n    _OwnedTokensCount[to]++;\r\n\r\n    // emit the transfer event\r\n    emit Transfer(address(0), to, tokenId);\r\n  }\r\n\r\n  /// @notice Count all NFTs assigned to an owner\r\n  /// @dev NFTs assigned to the zero address are considered invalid, and this\r\n  ///  function throws for queries about the zero address.\r\n  /// @param _owner An address for whom to query the balance\r\n  /// @return The number of NFTs owned by `_owner`, possibly zero\r\n  function balanceOf(address _owner) public view returns (uint256) {\r\n    // If the owner is the zero address, then throw\r\n    require(_owner != address(0), 'ERC721: balanceOf owner is invalid');\r\n    \r\n    return _OwnedTokensCount[_owner];\r\n  }\r\n\r\n  /// @notice Find the owner of an NFT\r\n  /// @dev NFTs assigned to zero address are considered invalid, and queries\r\n  ///  about them do throw.\r\n  /// @param _tokenId The identifier for an NFT\r\n  /// @return The address of the owner of the NFT\r\n  function ownerOf(uint256 _tokenId) public view returns(address) {\r\n    address owner = _tokenOwner[_tokenId];\r\n    // if the owner is the zero address, then throw an error\r\n    require(owner != address(0), 'ERC721: owner query for non-existent token');\r\n    return owner;\r\n  }\r\n}",
+  "sourceMap": "60:2398:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "60:2398:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2179:276;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;363:32:6;;;345:51;;333:2;318:18;2179:276:0;;;;;;;;1689:237;;;;;;:::i;:::-;;:::i;:::-;;;844:25:6;;;832:2;817:18;1689:237:0;698:177:6;2179:276:0;2234:7;2266:21;;;;;;;;;;;-1:-1:-1;;;;;2266:21:0;;2356:74;;;;-1:-1:-1;;;2356:74:0;;1082:2:6;2356:74:0;;;1064:21:6;1121:2;1101:18;;;1094:30;1160:34;1140:18;;;1133:62;-1:-1:-1;;;1211:18:6;;;1204:40;1261:19;;2356:74:0;;;;;;;;;2444:5;2179:276;-1:-1:-1;;2179:276:0:o;1689:237::-;1745:7;-1:-1:-1;;;;;1822:20:0;;1814:67;;;;-1:-1:-1;;;1814:67:0;;1493:2:6;1814:67:0;;;1475:21:6;1532:2;1512:18;;;1505:30;1571:34;1551:18;;;1544:62;-1:-1:-1;;;1622:18:6;;;1615:32;1664:19;;1814:67:0;1291:398:6;1814:67:0;-1:-1:-1;;;;;;1895:25:0;;;;;:17;:25;;;;;;;1689:237::o;14:180:6:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:6;;14:180;-1:-1:-1;14:180:6:o;407:286::-;466:6;519:2;507:9;498:7;494:23;490:32;487:52;;;535:1;532;525:12;487:52;561:23;;-1:-1:-1;;;;;613:31:6;;603:42;;593:70;;659:1;656;649:12;593:70;682:5;407:286;-1:-1:-1;;;407:286:6:o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract ERC721 {\r\n\r\n  event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\r\n  \r\n  // mapping in solidity creates a hash table of key pair values\r\n  // Mapping from token id to the token owner\r\n  mapping(uint256 => address) private _tokenOwner;\r\n\r\n  // Mapping from owner to number of owned tokens\r\n  mapping(address => uint) private _OwnedTokensCount;\r\n\r\n  function _exists(uint256 tokenId) internal view returns (bool) {\r\n    // settings the address of nft owner to check the mapping\r\n    // of the address from token owner at the tokenId\r\n    address owner = _tokenOwner[tokenId];\r\n    // If the owner is not 0, then the token exists\r\n    return owner != address(0); \r\n  }\r\n\r\n  function _mint(address to, uint256 tokenId) internal virtual {\r\n    // requires that the address isn't zero\r\n    require(to != address(0), 'ERC721: mint to address is invalid');\r\n    // requires that token token does not already exist\r\n    require(!_exists(tokenId), 'ERC721: token already exists');\r\n    // we are adding a new address with a token id for minting\r\n    _tokenOwner[tokenId] = to;\r\n    // keeping track of each address that is minting and adding one to the account\r\n    _OwnedTokensCount[to]++;\r\n\r\n    // emit the transfer event\r\n    emit Transfer(address(0), to, tokenId);\r\n  }\r\n\r\n  /// @notice Count all NFTs assigned to an owner\r\n  /// @dev NFTs assigned to the zero address are considered invalid, and this\r\n  ///  function throws for queries about the zero address.\r\n  /// @param _owner An address for whom to query the balance\r\n  /// @return The number of NFTs owned by `_owner`, possibly zero\r\n  function balanceOf(address _owner) public view returns (uint256) {\r\n    // If the owner is the zero address, then throw\r\n    require(_owner != address(0), 'ERC721: balanceOf owner is invalid');\r\n    return _OwnedTokensCount[_owner];\r\n  }\r\n\r\n  /// @notice Find the owner of an NFT\r\n  /// @dev NFTs assigned to zero address are considered invalid, and queries\r\n  ///  about them do throw.\r\n  /// @param _tokenId The identifier for an NFT\r\n  /// @return The address of the owner of the NFT\r\n  function ownerOf(uint256 _tokenId) public view returns(address) {\r\n    address owner = _tokenOwner[_tokenId];\r\n    // if the owner is the zero address, then throw an error\r\n    require(owner != address(0), 'ERC721: owner query for non-existent token');\r\n    return owner;\r\n  }\r\n}",
   "sourcePath": "C:\\Users\\pc\\Desktop\\test\\nfts\\contracts\\ERC721.sol",
   "ast": {
     "absolutePath": "project:/contracts/ERC721.sol",
@@ -2323,7 +2323,7 @@
             "body": {
               "id": 106,
               "nodeType": "Block",
-              "src": "1754:178:0",
+              "src": "1754:172:0",
               "statements": [
                 {
                   "expression": {
@@ -2487,7 +2487,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 17,
-                      "src": "1901:17:0",
+                      "src": "1895:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                         "typeString": "mapping(address => uint256)"
@@ -2500,7 +2500,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 87,
-                      "src": "1919:6:0",
+                      "src": "1913:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -2511,7 +2511,7 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "1901:25:0",
+                    "src": "1895:25:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2520,7 +2520,7 @@
                   "functionReturnParameters": 91,
                   "id": 105,
                   "nodeType": "Return",
-                  "src": "1894:32:0"
+                  "src": "1888:32:0"
                 }
               ]
             },
@@ -2608,7 +2608,7 @@
               "src": "1744:9:0"
             },
             "scope": 135,
-            "src": "1689:243:0",
+            "src": "1689:237:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -2617,7 +2617,7 @@
             "body": {
               "id": 133,
               "nodeType": "Block",
-              "src": "2249:212:0",
+              "src": "2243:212:0",
               "statements": [
                 {
                   "assignments": [
@@ -2629,10 +2629,10 @@
                       "id": 116,
                       "mutability": "mutable",
                       "name": "owner",
-                      "nameLocation": "2264:5:0",
+                      "nameLocation": "2258:5:0",
                       "nodeType": "VariableDeclaration",
                       "scope": 133,
-                      "src": "2256:13:0",
+                      "src": "2250:13:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2643,7 +2643,7 @@
                         "id": 115,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "2256:7:0",
+                        "src": "2250:7:0",
                         "stateMutability": "nonpayable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2661,7 +2661,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 13,
-                      "src": "2272:11:0",
+                      "src": "2266:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                         "typeString": "mapping(uint256 => address)"
@@ -2674,7 +2674,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 110,
-                      "src": "2284:8:0",
+                      "src": "2278:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2685,14 +2685,14 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "2272:21:0",
+                    "src": "2266:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "2256:37:0"
+                  "src": "2250:37:0"
                 },
                 {
                   "expression": {
@@ -2713,7 +2713,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 116,
-                          "src": "2370:5:0",
+                          "src": "2364:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2732,7 +2732,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "2387:1:0",
+                              "src": "2381:1:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
                                 "typeString": "int_const 0"
@@ -2753,7 +2753,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "2379:7:0",
+                            "src": "2373:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2762,7 +2762,7 @@
                               "id": 123,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "2379:7:0",
+                              "src": "2373:7:0",
                               "typeDescriptions": {}
                             }
                           },
@@ -2774,14 +2774,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "2379:10:0",
+                          "src": "2373:10:0",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "2370:19:0",
+                        "src": "2364:19:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2796,7 +2796,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "2391:44:0",
+                        "src": "2385:44:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_96ef70ec29dff83685de28e9b748d0638e773b5b421e690e9bdbe1d7eef5ce0a",
                           "typeString": "literal_string \"ERC721: owner query for non-existent token\""
@@ -2823,7 +2823,7 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "2362:7:0",
+                      "src": "2356:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2837,7 +2837,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2362:74:0",
+                    "src": "2356:74:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -2846,7 +2846,7 @@
                   },
                   "id": 130,
                   "nodeType": "ExpressionStatement",
-                  "src": "2362:74:0"
+                  "src": "2356:74:0"
                 },
                 {
                   "expression": {
@@ -2855,7 +2855,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 116,
-                    "src": "2450:5:0",
+                    "src": "2444:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2864,14 +2864,14 @@
                   "functionReturnParameters": 114,
                   "id": 132,
                   "nodeType": "Return",
-                  "src": "2443:12:0"
+                  "src": "2437:12:0"
                 }
               ]
             },
             "documentation": {
               "id": 108,
               "nodeType": "StructuredDocumentation",
-              "src": "1938:243:0",
+              "src": "1932:243:0",
               "text": "@notice Find the owner of an NFT\n @dev NFTs assigned to zero address are considered invalid, and queries\n  about them do throw.\n @param _tokenId The identifier for an NFT\n @return The address of the owner of the NFT"
             },
             "functionSelector": "6352211e",
@@ -2880,7 +2880,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "ownerOf",
-            "nameLocation": "2194:7:0",
+            "nameLocation": "2188:7:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 111,
@@ -2891,10 +2891,10 @@
                   "id": 110,
                   "mutability": "mutable",
                   "name": "_tokenId",
-                  "nameLocation": "2210:8:0",
+                  "nameLocation": "2204:8:0",
                   "nodeType": "VariableDeclaration",
                   "scope": 134,
-                  "src": "2202:16:0",
+                  "src": "2196:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2905,7 +2905,7 @@
                     "id": 109,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2202:7:0",
+                    "src": "2196:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2914,7 +2914,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2201:18:0"
+              "src": "2195:18:0"
             },
             "returnParameters": {
               "id": 114,
@@ -2928,7 +2928,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 134,
-                  "src": "2240:7:0",
+                  "src": "2234:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2939,7 +2939,7 @@
                     "id": 112,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2240:7:0",
+                    "src": "2234:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2949,21 +2949,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2239:9:0"
+              "src": "2233:9:0"
             },
             "scope": 135,
-            "src": "2185:276:0",
+            "src": "2179:276:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 136,
-        "src": "60:2404:0",
+        "src": "60:2398:0",
         "usedErrors": []
       }
     ],
-    "src": "33:2431:0"
+    "src": "33:2425:0"
   },
   "compiler": {
     "name": "solc",
@@ -2971,7 +2971,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T10:55:12.212Z",
+  "updatedAt": "2022-05-31T11:35:58.574Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

@@ -19,7 +19,7 @@ contract ERC721Enumerable is ERC721 {
   /// @notice Count NFTs tracked by this contract
   /// @return A count of valid NFTs tracked by this contract, where each one of
   ///  them has an assigned and queryable owner not equal to the zero address
-  function totalSupply() external view returns (uint256) {
+  function totalSupply() public view returns (uint256) {
     return _allTokens.length;
   }
 
@@ -36,7 +36,23 @@ contract ERC721Enumerable is ERC721 {
     _allTokensIndex[tokenId] = _allTokens.length;
     _allTokens.push(tokenId);
   }
+
+  // two functions - one that returns tokenByIndex and
+  // another one that returns tokenOfByOwnerIndex
+
+  function tokenByIndex(uint256 index) public view returns (uint256) {
+    // make sure that the index is not out of bounds the totalSupply
+    require(index < totalSupply(), "ERC721Enumerable: Global index is out of bounds!");
+    return _allTokens[index];
+  }
+
+  function tokenOfOwnerByIndex(address owner, uint index) public view returns(uint256) {
+    require(owner != address(0), "ERC721Enumerable: owner is invalid");
+    require(index < balanceOf(owner), "ERC721Enumerable: Owner index is out of bounds!");
+    return _ownedTokens[owner][index];
+  }
   
+  // add tokens to the owner list and set the position of the tokens indexes
   function _addTokensToOwnerEnumeration(address to, uint256 tokenId) private { 
     _ownedTokens[to].push(tokenId);
     _ownedTokensIndex[tokenId] = _ownedTokens[to].length;  
