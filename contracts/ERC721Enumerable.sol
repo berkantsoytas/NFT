@@ -27,10 +27,10 @@ contract ERC721Enumerable is ERC721 {
     super._mint(to, tokenId);
     // 2 things! 1. add tokens to the owner
     // B. all tokens to our totalsupply - to allTokens
-    _addTokensToTotalSupply(tokenId);
+    _addTokensToAllTokenEnumeration(tokenId);
   }
 
-  function _addTokensToTotalSupply(uint256 tokenId) private {
+  function _addTokensToAllTokenEnumeration(uint256 tokenId) private {
     _allTokens.push(tokenId);
   }
   
