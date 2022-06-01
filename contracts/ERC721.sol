@@ -1,10 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ERC721 {
+import "./ERC165.sol";
+import "./interfaces/IERC721.sol";
+
+
+contract ERC721 is ERC165, IERC721 {
 
 	event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
-	
+
 	// mapping in solidity creates a hash table of key pair values
 	// Mapping from token id to the token owner
 	mapping(uint256 => address) private _tokenOwner;
@@ -87,7 +91,7 @@ contract ERC721 {
 		emit Transfer(_from, _to, _tokenId);
 	}
 
-	function transferFrom(address _from, address _to, uint256 _tokenId) public {
+	function transferFrom(address _from, address _to, uint256 _tokenId) public payable {
 		// call the transfer function
 		_transferFrom(_from, _to, _tokenId);
 	}
