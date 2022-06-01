@@ -726,7 +726,7 @@
         54
       ],
       "IERC165": [
-        683
+        675
       ]
     },
     "id": 55,
@@ -751,7 +751,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 55,
-        "sourceUnit": 684,
+        "sourceUnit": 676,
         "src": "60:34:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -764,7 +764,7 @@
               "id": 3,
               "name": "IERC165",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 683,
+              "referencedDeclaration": 675,
               "src": "117:7:0"
             },
             "id": 4,
@@ -779,7 +779,7 @@
         "id": 54,
         "linearizedBaseContracts": [
           54,
-          683
+          675
         ],
         "name": "ERC165",
         "nameLocation": "107:6:0",
@@ -1003,7 +1003,7 @@
           },
           {
             "baseFunctions": [
-              682
+              674
             ],
             "body": {
               "id": 33,
@@ -1400,7 +1400,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-01T12:12:19.971Z",
+  "updatedAt": "2022-06-01T14:40:37.541Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

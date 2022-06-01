@@ -35,15 +35,15 @@
     "absolutePath": "project:/contracts/interfaces/IERC165.sol",
     "exportedSymbols": {
       "IERC165": [
-        683
+        675
       ]
     },
-    "id": 684,
+    "id": 676,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 674,
+        "id": 666,
         "literals": [
           "solidity",
           "^",
@@ -60,9 +60,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 683,
+        "id": 675,
         "linearizedBaseContracts": [
-          683
+          675
         ],
         "name": "IERC165",
         "nameLocation": "70:7:7",
@@ -70,13 +70,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 675,
+              "id": 667,
               "nodeType": "StructuredDocumentation",
               "src": "83:295:7",
               "text": "@notice Query if a contract implements an interface\n @param interfaceID The interface identifier, as specified in ERC-165\n @dev Interface identification is specified in ERC-165. This uses\n less than 30.000 gas.\n @return `true` if the contract implements `interfaceID`"
             },
             "functionSelector": "01ffc9a7",
-            "id": 682,
+            "id": 674,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -84,17 +84,17 @@
             "nameLocation": "391:17:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 678,
+              "id": 670,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 677,
+                  "id": 669,
                   "mutability": "mutable",
                   "name": "interfaceID",
                   "nameLocation": "416:11:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 682,
+                  "scope": 674,
                   "src": "409:18:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -103,7 +103,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 676,
+                    "id": 668,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "409:6:7",
@@ -118,17 +118,17 @@
               "src": "408:20:7"
             },
             "returnParameters": {
-              "id": 681,
+              "id": 673,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 680,
+                  "id": 672,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 682,
+                  "scope": 674,
                   "src": "452:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -137,7 +137,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 679,
+                    "id": 671,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "452:4:7",
@@ -151,14 +151,14 @@
               ],
               "src": "451:6:7"
             },
-            "scope": 683,
+            "scope": 675,
             "src": "382:76:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 684,
+        "scope": 676,
         "src": "60:401:7",
         "usedErrors": []
       }
@@ -171,7 +171,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-01T12:12:19.994Z",
+  "updatedAt": "2022-06-01T14:40:37.566Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

@@ -6,9 +6,6 @@ import "./interfaces/IERC721.sol";
 
 
 contract ERC721 is ERC165, IERC721 {
-
-	event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
-
 	// mapping in solidity creates a hash table of key pair values
 	// Mapping from token id to the token owner
 	mapping(uint256 => address) private _tokenOwner;
@@ -25,11 +22,9 @@ contract ERC721 is ERC165, IERC721 {
 				keccak256("balanceOf(bytes4)")^
 				keccak256("ownerOf(bytes4)")^
 				keccak256("transferFrom")
-
 			)
 		);
 	}
-
 
 	function _exists(uint256 tokenId) internal view returns (bool) {
 		// settings the address of nft owner to check the mapping

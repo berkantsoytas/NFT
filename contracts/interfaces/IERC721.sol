@@ -11,7 +11,7 @@ interface IERC721 /* is ERC165 */ {
     ///  (`to` == 0). Exception: during contract creation, any number of NFTs
     ///  may be created and assigned without emitting Transfer. At the time of
     ///  any transfer, the approved address for that NFT (if any) is reset to none.
-    ///  event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);
+    event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);
 
     /// @dev This emits when the approved address for an NFT is changed or
     ///  reaffirmed. The zero address indicates there is no approved address.
