@@ -18,7 +18,6 @@ Good luck and have fun!
 ### Todo
 
 - [ ] Frontend
-- [ ] Contract Testing
-- [ ] Backend
+- [x] Contract Testing
 - [ ] Documentation
-- [ ] Deployment
+- [x] Deployment
